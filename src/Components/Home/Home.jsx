@@ -18,8 +18,10 @@ const Home = () => {
     return (
 
         <div>
-            <h1 className='text-6xl bg-green-400'>hello</h1>
+            <div>
+                <h1 className='text-6xl bg-green-400'>hello</h1>
             <h2>cart: {carts.length}</h2>
+            </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             
                {
