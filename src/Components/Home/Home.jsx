@@ -17,13 +17,16 @@ const Home = () => {
 
     return (
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div>
             <h1 className='text-6xl bg-green-400'>hello</h1>
             <h2>cart: {carts.length}</h2>
-            {
-                carts.map((cart,idx) => <Cart key={idx} cart={cart}></Cart>)
-            }
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            
+               {
+                   carts.map((cart,idx) => <Cart key={idx} cart={cart}></Cart>)
+               }
 
+            </div>
         </div>
     );
 };
